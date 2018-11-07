@@ -288,3 +288,35 @@ nav h1 a {
 
 
 
+@media screen and (max-width: 575px) {
+  body {
+    background-color: red;
+  }
+
+  .filter-options {
+    height: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .filter-options h2 {
+    display: block;
+  }
+
+  .filter-options select {
+    width: 90%;
+    min-width: 48px;
+    min-height: 48px;
+    margin: 3px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
