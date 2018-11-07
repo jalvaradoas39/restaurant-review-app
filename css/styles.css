@@ -289,7 +289,7 @@ nav h1 a {
 
 
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 480px) {
   body {
     background-color: red;
   }
