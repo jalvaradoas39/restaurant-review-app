@@ -322,13 +322,20 @@ nav h1 a {
   }
 
   ul#restaurants-list {
-    padding: 0;
+    display: block;
   }
 
   ul#restaurants-list li {
     margin: 0;
     padding: 25px 30px 25px;
+    display: table-row;
+    text-align: center;
   }
+
+  #restaurants-list li a {
+    margin-bottom: 20px;
+  }
+
 
 }
 
