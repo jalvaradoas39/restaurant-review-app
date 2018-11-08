@@ -27,6 +27,11 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 a img{
 	border: none 0px #fff;
 }
@@ -289,6 +294,7 @@ nav h1 a {
 
 
 
+/* MOBILE MEDIA QUERIES */
 @media screen and (max-width: 480px) {
   body {
     background-color: red;
@@ -326,6 +332,46 @@ nav h1 a {
 
 }
 
+
+/* TABLET MEDIA QUERIES */
+@media screen and (min-width: 491px) and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+
+  .filter-options {
+    height: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .filter-options h2 {
+    display: block;
+  }
+
+  .filter-options select {
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  ul#restaurants-list {
+    display: block;
+  }
+
+  ul#restaurants-list li {
+    margin: 0;
+    padding: 25px 30px 25px;
+    display: table-row;
+    text-align: center;
+  }
+
+  #restaurants-list li a {
+    margin-bottom: 20px;
+  }
+
+
+
+}
 
 
 
