@@ -334,7 +334,7 @@ nav h1 a {
 
 
 /* TABLET MEDIA QUERIES */
-@media screen and (min-width: 491px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     background-color: green;
   }
