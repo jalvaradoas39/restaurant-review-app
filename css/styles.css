@@ -311,6 +311,10 @@ nav h1 a {
     background-color: red;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   .filter-options {
     height: 100%;
     padding: 15px 0;
@@ -379,7 +383,6 @@ nav h1 a {
   #restaurant-hours {
     margin: 0 auto;
   }
-
 
 
 }
