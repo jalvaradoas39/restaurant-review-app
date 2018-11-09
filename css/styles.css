@@ -353,6 +353,11 @@ nav h1 a {
     width: 100%;
   }
 
+  #restaurant-container, #reviews-container {
+    padding: 30px 0px 30px;
+    width: 100%;
+  }
+
 }
 
 
