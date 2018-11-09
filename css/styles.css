@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+header, main, footer {
+  width: 100%;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -202,7 +207,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+/*.inside header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -225,7 +230,7 @@ nav h1 a {
   bottom: 0;
   position: absolute;
   width: 50%;
-}
+}*/
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -342,8 +347,9 @@ nav h1 a {
     margin-bottom: 20px;
   }
 
+
   /* restaurants.html */
-  body#restaurant-body ul#breadcrumb {
+  #restaurant-body ul#breadcrumb {
     width: 100%;
   }
 
