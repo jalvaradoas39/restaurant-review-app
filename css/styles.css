@@ -300,6 +300,8 @@ nav h1 a {
 
 /* MOBILE MEDIA QUERIES */
 @media screen and (max-width: 480px) {
+
+  /* index.html */
   body {
     background-color: red;
   }
@@ -339,12 +341,20 @@ nav h1 a {
   #restaurants-list li a {
     margin-bottom: 20px;
   }
+
+  /* restaurants.html */
+  body#restaurant-body ul#breadcrumb {
+    width: 100%;
+  }
+
 }
 
 
 
 /* TABLET MEDIA QUERIES */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+  /* index.html */
   body {
     background-color: green;
   }
@@ -379,6 +389,8 @@ nav h1 a {
     margin-bottom: 20px;
   }
 }
+
+
 
 
 
