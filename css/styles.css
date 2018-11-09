@@ -372,6 +372,16 @@ nav h1 a {
     width: 100%;
   }
 
+  #restaurant-address {
+    text-align: center;
+  }
+
+  #restaurant-hours {
+    margin: 0 auto;
+  }
+
+
+
 }
 
 
