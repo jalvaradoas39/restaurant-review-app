@@ -368,6 +368,10 @@ nav h1 a {
     height: auto;
   }
 
+  #restaurant-cuisine {
+    width: 100%;
+  }
+
 }
 
 
