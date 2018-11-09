@@ -363,6 +363,11 @@ nav h1 a {
     text-align: center;
   }
 
+  #restaurant-img {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 
