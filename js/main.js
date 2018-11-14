@@ -31,6 +31,9 @@ fetchNeighborhoods = () => {
  */
 fillNeighborhoodsHTML = (neighborhoods = self.neighborhoods) => {
   const select = document.getElementById('neighborhoods-select');
+  // Add tab index to select tag for accessibility
+  select.tabIndex = 0;
+
   neighborhoods.forEach(neighborhood => {
     const option = document.createElement('option');
     option.innerHTML = neighborhood;
@@ -58,6 +61,8 @@ fetchCuisines = () => {
  */
 fillCuisinesHTML = (cuisines = self.cuisines) => {
   const select = document.getElementById('cuisines-select');
+  // Add tab index to select tag for accessibility
+  select.tabIndex = 0;
 
   cuisines.forEach(cuisine => {
     const option = document.createElement('option');
@@ -158,6 +163,8 @@ createRestaurantHTML = (restaurant) => {
   li.append(address);
 
   const more = document.createElement('a');
+  // Add tab index to links for accessibility
+  more.tabIndex = 0;
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
