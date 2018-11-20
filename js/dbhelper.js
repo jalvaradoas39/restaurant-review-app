@@ -11,10 +11,10 @@ class DBHelper {
     const port = 8000; // Change this to your server port
 
     // For Development
-    // return `http://localhost:${port}/data/restaurants.json`;
+    return `http://localhost:${port}/data/restaurants.json`;
 
     // For Production
-    return `https://jalvaradoas39.github.io/restaurant-review-app/data/restaurants.json`;
+    // return `https://jalvaradoas39.github.io/restaurant-review-app/data/restaurants.json`;
   }
 
   /**

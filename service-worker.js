@@ -1,23 +1,23 @@
 var cacheName = 'v1';
 var cacheFiles = [
-	'/restaurant-review-app/',
-	'/restaurant-review-app/index.html',
-	'/restaurant-review-app/restaurant.html',
-	'/restaurant-review-app/css/styles.css',
-	'/restaurant-review-app/data/restaurants.json',
-	'/restaurant-review-app/js/dbhelper.js',
-	'/restaurant-review-app/js/restaurant_info.js',
-	'/restaurant-review-app/js/main.js',
-	'/restaurant-review-app/img/1.jpg',
-	'/restaurant-review-app/img/2.jpg',
-	'/restaurant-review-app/img/3.jpg',
-	'/restaurant-review-app/img/4.jpg',
-	'/restaurant-review-app/img/5.jpg',
-	'/restaurant-review-app/img/6.jpg',
-	'/restaurant-review-app/img/7.jpg',
-	'/restaurant-review-app/img/8.jpg',
-	'/restaurant-review-app/img/9.jpg',
-	'/restaurant-review-app/restaurnt-/img/10.jpg'
+	'./',
+	'./index.html',
+	'./restaurant.html',
+	'./css/styles.css',
+	'./data/restaurants.json',
+	'./js/dbhelper.js',
+	'./js/restaurant_info.js',
+	'./js/main.js',
+	'./img/1.jpg',
+	'./img/2.jpg',
+	'./img/3.jpg',
+	'./img/4.jpg',
+	'./img/5.jpg',
+	'./img/6.jpg',
+	'./img/7.jpg',
+	'./img/8.jpg',
+	'./img/9.jpg',
+	'./img/10.jpg'
 ];
 
 
@@ -26,7 +26,7 @@ var cacheFiles = [
 // offline caching capabilities with the assets you need to run 
 // your app offline.
 self.addEventListener('install', function(e) {
-	console.log('[ServiceWorker] installed'/*, e*/);
+	console.log('[ServiceWorker] installed');
 
 	// block other events until completion
 	e.waitUntil(
