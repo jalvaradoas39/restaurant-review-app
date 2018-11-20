@@ -30,3 +30,26 @@ self.addEventListener('install', function(e) {
 		})
 	)
 });
+
+
+// primary use of activate is for cleanup of resources used 
+// in previous versions of a Service worker script
+self.addEventListener('activate', function(e) {
+	console.log("[ServiceWorker] activated");
+
+	// block other events until completion
+	e.waitUntil(
+		caches.keys().then(function(cacheNames) {
+			return Promise.all(cacheNames.map(function(cache) {
+				
+				if (cache !== cacheName) {
+					console.log("[ServiceWorker] removing old cache from " + cache);
+					return caches.delete(cache);
+				}
+
+			}))
+		})
+	)
+});
+
+
