@@ -88,7 +88,7 @@ self.addEventListener('fetch', function(e) {
 
 		}).catch(function() {
 			//  fallback image for failure to update
-			return catches.match('./img/1.jpg');
+			return caches.match('./img/1.jpg');
 		})
 	);
 });
