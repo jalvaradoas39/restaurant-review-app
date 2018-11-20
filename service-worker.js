@@ -53,3 +53,40 @@ self.addEventListener('activate', function(e) {
 });
 
 
+// fire every time any resource controlled by a service worker 
+// is fetched, which includes the documents inside the specified 
+// scope, and any resources referenced in those documents
+self.addEventListener('fetch', function(e) {
+	console.log("[ServiceWorker] fetching");
+
+    // hijacks our HTTP responses and updates them
+	e.respondWith(
+		caches.match(e.request).then(function(response) {
+			// if the resources isn't in the cache, request it 
+			// from the network
+			return response || fetch(e.request).then(function(response) {
+				// cloning the response is necessary because request and 
+				// response streams can only be read once.  In order to 
+				// return the response to the browser and put it in the 
+				// cache we have to clone it
+				let responseClone = response.clone();
+				caches.open(cacheName).then(function(cache) {
+					// use put to add the resource to the cache
+					cache.put(e.request, responseClone);
+				});
+
+				return response;
+			});
+
+		}).catch(function() {
+			//  fallback image for failure to update
+			return catches.match('./img/1.jpg');
+		})
+	);
+});
+
+
+
+
+
+
