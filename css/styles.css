@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
@@ -285,9 +284,6 @@ nav h1 a {
 @media screen and (max-width: 480px) {
 
   /* index.html */
-  body {
-    background-color: red;
-  }
 
   .filter-options {
     height: 100%;
@@ -380,9 +376,6 @@ nav h1 a {
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   /* index.html */
-  body {
-    background-color: green;
-  }
 
   .filter-options {
     height: 100%;
@@ -471,9 +464,6 @@ nav h1 a {
 @media screen and (min-width: 769px) {
 
   /* restaurant.html */
-  body {
-    background-color: blue;
-  }
 
   #reviews-container, #footer {
     box-sizing: border-box;
