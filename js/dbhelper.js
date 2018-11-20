@@ -14,7 +14,7 @@ class DBHelper {
     // return `http://localhost:${port}/data/restaurants.json`;
 
     // For Production
-    return `https://jalvaradoas39.github.io/data/restaurants.json`;
+    return `https://jalvaradoas39.github.io/restaurant-review-app/data/restaurants.json`;
   }
 
   /**
