@@ -8,40 +8,40 @@
 </head>
 
 <body>
-  <header>
+  <header role="header">
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" role="main">
 
     <section id="map-container">
       <div id="map"></div>
     </section>
 
     <section>
-      <div class="filter-options">
+      <div class="filter-options" aria-label="Filter Results">
         <h2>Filter Results</h2>
         <label>
-          <select id="neighborhoods-select" class="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <select id="neighborhoods-select" class="neighborhoods-select" name="neighborhoods" aria-label="Select Neighborhood" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>      
         </label>
         <label>
-          <select id="cuisines-select" class="neighborhoods-select" name="cuisines" onchange="updateRestaurants()">
+          <select id="cuisines-select" class="neighborhoods-select" name="cuisines" aria-label="Select cuisine"onchange="updateRestaurants()">
             <option value="all">All Cuisines</option>
           </select>          
         </label>
       </div>
 
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" aria-label="List of Restaurants"></ul>
     </section>
 
   </main>
 
 
-  <footer id="footer">
+  <footer id="footer" role="footer">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 

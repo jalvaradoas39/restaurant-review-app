@@ -9,7 +9,7 @@
 <body class="inside" id="restaurant-body">
 
   <!-- Beginning header -->
-  <header>
+  <header role="header">
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
@@ -26,16 +26,16 @@
 
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="main">
 
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" aria-label="Map of Restaurants" role="application">
       <div id="map"></div>
     </section>
     <!-- End map -->
 
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
+    <section id="restaurant-container" aria-label="Restaurant Information">
       <h1 id="restaurant-name"></h1>
       <img id="restaurant-img" class="restaurant-img">
       <p id="restaurant-cuisine"></p>
@@ -45,7 +45,7 @@
     <!-- end restaurant -->
     
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container" aria-label="List of Reviews">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
@@ -56,7 +56,7 @@
 
 
   <!-- Beginning footer -->
-  <footer id="footer">
+  <footer id="footer" role="footer">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
