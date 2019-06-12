@@ -8,13 +8,16 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000; // Change this to your server port
+    const port = process.env.PORT || 8000; // Change this to your server port
 
-    // For Development
+    // ****************** CONTINUE HERE (create config folder for keys and add to heroku env variables setting) *********************
+    // if (process.env.NODE_ENV === 'production') {
+    //   return `https://alvarado-restaurant-review-app.herokuapp.com/data/restaurants.json`
+    // } else {
+    //   return `http://localhost:${port}/data/restaurants.json`;
+    // }
+
     return `http://localhost:${port}/data/restaurants.json`;
-
-    // For Production
-    // return `https://jalvaradoas39.github.io/restaurant-review-app/data/restaurants.json`;
   }
 
   /**
