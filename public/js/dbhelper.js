@@ -10,10 +10,10 @@ class DBHelper {
 		const port = 8000; // Change this to your server port
 
 		// PRODUCTION
-		//return `https://restaurant-review-app.herokuapp.com/data/restaurants.json`;
+		return `https://restaurant-review-app.herokuapp.com/data/restaurants.json`;
 
 		// DEVELOPMENT
-		return `http://localhost:${port}/data/restaurants.json`;
+		//return `http://localhost:${port}/data/restaurants.json`;
 	}
 
 	/**
